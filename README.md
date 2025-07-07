@@ -49,7 +49,7 @@ This pipeline is fully parallelized.
 
 | Feature | Description |
 |---------|-------------|
-| **Modular design** | `01_load_data.R`, `02_build_matrix.R`, `03_run_simulation.R`, orchestrated by `main.R`. |
+| **Modular design** | `01_load_data.R`, `02_build_matrix.R`, `03_run_simulation.R`, orchestrated by `run_montecarlo_kuma.R`. |
 | **Penalty factors** | Automatic 0/1 vector for fixed vs. penalized blocks. |
 | **Sparse matrices** | Utilises `Matrix` + `glmnet` for memory-efficient high-dim X. |
 | **Reproducible parallelism** | `foreach` + `doParallel` + `doRNG` ensures identical runs. |
