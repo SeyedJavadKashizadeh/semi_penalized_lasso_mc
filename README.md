@@ -33,6 +33,18 @@ For panel data, first aggregate to a single row (e.g., last period or summary st
 
 ---
 
+## 3 Parallelization 
+
+This pipeline is fully parallelized.
+
+### Parallel Monte Carlo LASSO
+
+- Each Monte Carlo iteration is run independently using a `foreach` loop.
+- Parallel execution is handled by `doParallel`.
+- A fixed random seed is passed through `doRNG`, ensuring deterministic results.
+
+
+
 ## 6  Key Features
 
 | Feature | Description |
